@@ -16,6 +16,8 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->string('customer_name');
             $table->string('phone');
+            $table->string('email');
+            $table->dateTime('scheduled_at');
             $table->uuid('service_id');
             $table->foreign('service_id')->references('id')->on('services');
             $table->enum('status', StatusEnum::values())->default(StatusEnum::Pending->value);

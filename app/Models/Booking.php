@@ -9,5 +9,12 @@ class Booking extends Model
 {
     use HasUuids;
 
-    protected $fillable = ['customer_name', 'phone', 'service_id', 'status'];
+    protected $fillable = ['customer_name', 'phone', 'email', 'service_id', 'status', 'scheduled_at',];
+
+    protected $dates = ['scheduled_at'];
+
+    public function service()
+    {
+        return $this->belongsTo(Service::class);
+    }
 }

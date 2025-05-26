@@ -24,7 +24,9 @@ class BookingRequest extends FormRequest
         return [
             'customer_name' => 'required|string',
             'phone' => 'required|string',
+            'email' => 'required|email|string',
             'service_id' => 'required|exists:services,id',
+            'scheduled_at' => 'required|date|after_or_equal:now',
         ];
     }
 }

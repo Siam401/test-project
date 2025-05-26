@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\BookingController;
-use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\Api\BookingController;
+use App\Http\Controllers\Api\ServiceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
