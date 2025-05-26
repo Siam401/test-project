@@ -19,6 +19,10 @@ composer install
 ```
 
 ```bash
+npm install
+```
+
+```bash
 php artisan key:generate
 ```
 
@@ -30,7 +34,11 @@ php artisan optimize:clear
 php artisan migrate --seed
 ```
 
-Run the server
+# Run the server
+
+```bash
+npm run dev
+```
 
 ```bash
 php artisan serve
